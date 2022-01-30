@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\POSModel;
 
-class News extends BaseController
+class SalesRegister extends BaseController
 {
     public function index()
     {
@@ -16,7 +16,7 @@ class News extends BaseController
         ];
 
         echo view('templates/header', $data);
-        echo view('news/overview', $data);
+        echo view('SalesRegister/register', $data);
         echo view('templates/footer', $data);
     }
 
